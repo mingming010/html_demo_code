@@ -23,7 +23,7 @@ a {
 }
 
 body {
-    background-color: #f3f5f7;
+    background-color: #fff;
 }
 
 /* 版心布局 */
@@ -148,7 +148,7 @@ div .user span {
 .banner {
     position: relative;
     height: 420px;
-    background-color: #1d036d;
+    background-color: rgb(148, 140, 131);
 }
 
 .banner .wrapper {
@@ -186,7 +186,7 @@ div .user span {
 }
 
 .banner .left a:hover {
-    color: rgb(60, 60, 255);
+    color: rgb(157, 167, 169);
 }
 
 
@@ -348,7 +348,7 @@ div .user span {
 /* 版权 */
 .footer {
     height: 400px;
-    background-color: #fff;
+    background-color: #f3f5f7;
 }
 
 .footer .left {
