@@ -192,11 +192,10 @@ div .user span {
 
 
 .banner .left_2 img {
-    position: absolute;
-    height: 150px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    float: left;
+    height: 160px;
+    margin: 130px 140px;
+    margin-right: 0px;
 }
 
 .banner .right .top {
