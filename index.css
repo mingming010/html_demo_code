@@ -146,6 +146,7 @@ div .user span {
 
 /* 轮播图 */
 .banner {
+    position: relative;
     height: 420px;
     background-color: #1d036d;
 }
@@ -186,6 +187,16 @@ div .user span {
 
 .banner .left a:hover {
     color: rgb(60, 60, 255);
+}
+
+
+
+.banner .left_2 img {
+    position: absolute;
+    height: 150px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .banner .right .top {
