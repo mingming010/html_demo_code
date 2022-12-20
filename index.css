@@ -1,0 +1,398 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+/* 版心布局 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.hader_top {
+    height: 100px;
+    background-color: #fff;
+}
+
+/* hader配置 */
+.hader {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    height: 100px;
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* hader_logo */
+h1 img {
+    margin: 10px 50px;
+    float: left;
+    height: 80px;
+}
+
+/* nav */
+.nav {
+    float: left;
+    height: 100px;
+    margin: 0 20px;
+}
+
+
+.nav a {
+    height: 46px;
+    display: inline-block;
+    padding: 10px 0;
+    margin: 27px 20px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover {
+    border-bottom: 2px solid #000;
+}
+
+/* 搜索 */
+.search {
+    float: left;
+    width: 400px;
+    height: 60px;
+    border: 1px solid #000;
+    margin: 20px 0;
+}
+
+/* 搜索输入 */
+div .hader_search {
+    height: 58px;
+    width: 348px;
+    border: 0;
+    padding-left: 20px;
+}
+
+div .hader_search::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+/* 搜索图标 */
+div .hader_bgi {
+    float: right;
+    width: 50px;
+    height: 58px;
+    background-color: black;
+    border: 0px solid #000;
+    font-size: 20px;
+    color: white;
+}
+
+/* 用户信息 */
+div .user {
+    float: left;
+    margin-left: 40px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+div .user_img:hover {
+    position: relative;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+div .user_img {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin: 30px 10px 30px 0;
+    vertical-align: middle;
+}
+
+div .user span {
+    font-size: 14px;
+    color: #7a7a7a;
+}
+
+/* 轮播图 */
+.banner {
+    height: 420px;
+    background-color: #1d036d;
+}
+
+.banner .wrapper {
+    height: 420px;
+    background-image: url(https://www.itheima.com/special/brandzly/images/ban1.jpg);
+    background-position: -480px -150px;
+}
+
+.banner .wrapper .left {
+    float: left;
+    height: 420px;
+    width: 190px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 20px;
+    padding-top: 10px;
+    line-height: 44px;
+}
+
+.banner .wrapper .right {
+    float: right;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 50px;
+}
+
+.banner .left span {
+    float: right;
+}
+
+
+.banner .left a {
+    font-size: 14px;
+    color: #fff
+}
+
+.banner .left a:hover {
+    color: rgb(60, 60, 255);
+}
+
+.banner .right .top {
+    height: 48px;
+    background-color: #9acee9;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.banner .right .contect {
+    padding: 0 18px;
+}
+
+.banner .right .contect dl {
+    padding: 10px 0;
+    border-bottom: 2px solid #e8e6e7;
+}
+
+.banner .right .contect dt {
+    font-size: 18px;
+    color: #4d4b4e;
+}
+
+.banner .right .contect dd {
+    font-size: 14px;
+    color: #a7a7a7;
+}
+
+.banner .right a {
+    width: 200px;
+    height: 40px;
+    line-height: 36px;
+    margin: 10px auto;
+    display: block;
+    border: 2px solid #2b9ffa;
+    color: #2b9ffa;
+    text-align: center;
+}
+
+/* 精品推荐 */
+.good {
+    margin-top: 10px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+    padding: 20px 26px 20px 34px;
+}
+
+.good h2 {
+    float: left;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.good ul {
+    float: left;
+    margin-left: 30px;
+}
+
+.good ul li {
+    float: left;
+
+}
+
+.good ul li a {
+    padding: 0 30px;
+    border-left: 1px solid #000;
+    color: #000;
+}
+
+.good .change {
+    float: right;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+/* 精品推荐课程 */
+.box {
+    margin-top: 35px;
+
+}
+
+.box .title {
+    height: 40px;
+    /* background-color: pink; */
+}
+
+.box h2 {
+    float: left;
+    font-size: 20px;
+    columns: #494949;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.box .more {
+    float: right;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #a7a7a7;
+    line-height: 40px;
+}
+
+.box .content li {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    /* background-color: pink; */
+    margin: 0 15px 15px 0;
+}
+
+.box .content li:nth-child(5n) {
+    margin-right: 0;
+}
+
+.box .content li:hover {
+    box-shadow: 0px 2px 3px 0px rgba(118, 118, 118, 0.2);
+}
+
+.box .content li h3 {
+    padding: 20px;
+    font-size: 14px;
+    color: #050505;
+    font-weight: 400;
+}
+
+.box .content li p {
+    margin: 0 20px;
+    font-size: 12px;
+    color: #999;
+
+}
+
+.box .content li span {
+    color: #ff7c2d;
+}
+
+.box li .hot {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 33.5px;
+    height: 17px;
+}
+
+/* 版权 */
+.footer {
+    height: 400px;
+    background-color: #fff;
+}
+
+.footer .left {
+    float: left;
+}
+
+.footer .right {
+    float: right;
+}
+
+.footer .left .left_img {
+    margin: 10px 30px 0;
+    height: 100px;
+}
+
+.footer .left p {
+    margin: 10px 55px 10px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer .left a {
+    margin-left: 20px;
+    width: 120px;
+    height: 36px;
+    border: 1px solid #00a4ff;
+    display: block;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.footer .right {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.footer .right div {
+    float: right;
+    margin: 0 50px;
+}
+
+.footer .right h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.footer .right li {
+    margin: 2px 0;
+}
+
+.footer .right li a {
+    color: #757575;
+    font-size: 14px;
+}
